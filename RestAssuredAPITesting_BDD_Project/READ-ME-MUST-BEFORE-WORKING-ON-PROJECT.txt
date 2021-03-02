@@ -1,0 +1,178 @@
+READ-ME - MUST READ BEFORE WORKING ON THIS PROJECT:
+
+// Source: https://www.youtube.com/watch?v=n3UITFRJ9KU&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=1
+Following this series to learn... "Tutorial-1: API/Webservices Testing using RestAssured BDD Approach"
+
+API Testing using RestAssured
+BDD - Behavior Driven Development Approach
+
+Setup Environment:
+---------------------------
+Java
+Eclipse
+Maven
+TestNG
+Rest Assured Dependencies
+
+Dependencies to Download for this project:
+RestAssured Dependency
+JSON-Schema-Validator
+JSON-Path
+XML-Path
+TestNG dependency
+Java-Hamcrest
+Java-Hamcrest-core
+Java-Hamcrest-library
+
+*************************************************************************************************************
+Tutorial-2: API/Webservices Testing using RestAssured BDD Approach
+https://www.youtube.com/watch?v=DehqozMbx8s&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=2
+
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+---------------------------------------------------------------
+
+1) Keywords used in BDD.
+2) How to send GET request (Weather API)
+URL to use: http://restapi.demoqa.com/utilities/weather/city/Hyderabad (This site is not working).
+
+Use this site, instead:
+Example of API call:
+api.openweathermap.org/data/2.5/weather?q=SYDNEY&APPID=586214337c85e7920184b60aa32ebee2
+
+Validations:
+----------------
+Status Code
+Status Line
+Response Body
+header
+*************************************************************************************************************
+//Source: https://www.youtube.com/watch?v=c04OckzYeOk&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=3
+//Topic: Tutorial-3: API/Webservices Testing using RestAssured BDD Approach
+
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+---------------------------------------------------------------
+How to Send POST request (Dummy API)
+
+URL: http://dummy.restapiexample.com/api/v1/employees 
+/create
+
+Body:
+{
+"id": "25",
+"employee_name": "KRISHNA CHAITANYA",
+"employee_salary": "200003",
+"employee_age": "41"
+}
+
+Output Validations:
+----------------
+{
+    "status": "success",
+    "data": {
+        "id": 818
+    },
+    "message": "Successfully! Record has been added."
+}
+*************************************************************************************************************
+//Topic: Tutorial-4: API/Webservices Testing using RestAssured BDD Approach
+//Source: https://www.youtube.com/watch?v=x4BKSAKZ-Xg&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=4
+
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+---------------------------------------------------------------
+Mock URL to refer: http://dummy.restapiexample.com/public/
+
+
+How to send PUT Request
+http://dummy.restapiexample.com/api/v1/update/21
+/update/{id} 
+
+*************************************************************************************************************
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+---------------------------------------------------------------
+Video URL: https://www.youtube.com/watch?v=jIvYQesb_zc&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=5
+Mock URL to refer: http://dummy.restapiexample.com/public/
+
+How to send DELETE Request
+
+http://dummy.restapiexample.com/api/v1/delete/2 (Original API URL)
+Base URL = http://dummy.restapiexample.com/api/v1/
+Base Path = /delete/{id}
+
+*************************************************************************************************************
+//Source: https://www.youtube.com/watch?v=OSnvd8sMpGQ&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=6
+//Topic: Tutorial-6: API/Webservices Testing using RestAssured BDD Approach | Validations in JSON Response
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+--------------------------------------------------------------- 
+1) Test Status Code
+2) Log Response
+3) Verifying Single Content in response body
+4) Verifying Multiple Contents in Response body
+5) Setting Parameters and Headers
+
+NOTE: TRY TO USE JSONPATH FINDER (in Google Chrome), to find any element in the JSON Response
+URL: https://chrome.google.com/webstore/detail/jsonpath-finder/bankcpekihijigplompggpdolehhnale?hl=en-GB
+URL: Sample JSON URL: https://restcountries.eu/rest/v2/name/india
+URL: https://restcountries.eu/
+URL: https://gorest.co.in/
+
+********************************************************************************************************
+********************************************************************************************************
+API Testing Using RestAssured
+BDD - Behavior Driven Development Approach
+--------------------------------------------------------------- 
+
+//Source: https://www.youtube.com/watch?v=5xzoJmGzz4o&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=7
+//Topic: Tutorial-7: API/Webservices Testing using RestAssured BDD Approach | Validations in XML Response
+
+1) Verifying Single Content in XML Response.
+2) Verifying Multiple Contents in XML Response.
+3) Verifying all the content in the XML Response in one go.
+4) Find values using XML Path in XML Response.
+5) XPath with text() function
+********************************************************************************************************
+
+//Source: https://www.youtube.com/watch?reload=9&reload=9&v=seBJgbMOwKw&list=PLUDwpEzHYYLskkglxoXd0L6DKu4uOfh-m&index=9
+//Topic: Tutorial-9: API/Webservices Testing using RestAssured BDD | Serialization & De-serialization JSON
+
+/**
+ * API Testing using RestAssured:
+BDD - Behavior Driven Development Approach:
+---------------------------------------------------------------
+1) Post and Get Request without Serialization and De-Serialization (Using HashMap)
+2) Post and Get Request using Serialization and De-Serialization
+
+Request and Response used: JSON FORMAT
+ * 
+ * 
+ * @author madir
+ *
+ */
+ ********************************************************************************************************
+ API Testing using RestAssured:
+BDD - Behavior Driven Development Approach:
+---------------------------------------------------------------
+1) Post and Get Request using Serialization and De-Serialization
+
+Request and Response used: XML FORMAT
+
+Pre-requisite: Install Gradel on Windows.
+Gradle Download Link: https://gradle.org/releases/
+
+VideoGameDB API Download Link:
+https://github.com/james-willett/VideoGameDB
+
+How to run the application using Gradle:
+c:>gradlew bootRun
+
+URL to get API Request:
+URL: http://localhost:8080/swagger-ui/index.html#
+ ********************************************************************************************************
+ 
+
+
+
