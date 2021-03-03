@@ -171,8 +171,43 @@ c:>gradlew bootRun
 
 URL to get API Request:
 URL: http://localhost:8080/swagger-ui/index.html#
+
  ********************************************************************************************************
  
+ Git and GitHub: HOW TO COMMIT FILES FROM Workspace TO Remote Repository IN Eclipse IDE.
+1) Signup in GitHub Repository and get that account.
+2) Login to GitHub.
+3) Create a new Repository.[In the Eclipse IDE]
+   URL: https://github.com/mkrishnachaitanya/restassuredemployeeproject_demo.git
+4) Cloning local Git Repository within Eclipse using GitHub URL. (This step will automatically create the repository).
+5) Add our project to the Local Git Repository (Right Click on the Project-->Team-->Share Project-->Select Local Repository from drop down-->Finish).
+6) Right Click on the Project [these options are displayed in the Eclipse IDE], and select 'Team' and select the 'Add to Index'[basically add the files to the 'Staging' area] option.
+7) Right Click on the Project [these options are displayed in the Eclipse IDE], and select 'Team' and select the 'Commit' option. After this operation, a window is displayed on the right side of the screen (mentioning the 'Unstaged Changes', 'Stages Changes' and 'Commit Message'.
 
+
+create a new repository on the command line
+
+echo "# restassuredemployeeproject_demo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mkrishnachaitanya/restassuredemployeeproject_demo.git
+git push -u origin main
+
+
+or push an existing repository from the command line
+
+git remote add origin https://github.com/mkrishnachaitanya/restassuredemployeeproject_demo.git
+git branch -M main
+git push -u origin main
+
+
+Files are moved from Workspace to the Remote Repository in the following steps:
+Files in Workspace/working directory-->Staging Area-->Local Git Repository--> Remote Github Repository.
+
+Git and GitHub are version control system tools.
+ 
+ ********************************************************************************************************
 
 
